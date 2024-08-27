@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voting Form</h1>
+        <form id="votingForm">
+            <label for="regNumber">Registration Number:</label>
+            <input type="text" id="regNumber" name="regNumber" required minlength="12" maxlength="12" pattern="\d{12}">
+
+            <!-- President Section -->
+            <fieldset>
+                <legend>President</legend>
+                <div class="candidate">
+                    <input type="radio" id="president1" name="president" value="Candidate 1" required>
+                    <label for="president1">
+                        <img src="https://via.placeholder.com/150" alt="Candidate 1">
+                        <span>Jerith G IV Year CSE A</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="president2" name="president" value="Candidate 2">
+                    <label for="president2">
+                        <img src="https://via.placeholder.com/150" alt="Candidate 2">
+                        <span>Parithi M IV Year CSE B</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="president3" name="president" value="Candidate 3">
+                    <label for="president3">
+                        <img src="https://via.placeholder.com/150" alt="Candidate 3">
+                        <span>Rohith Kanna K IV Year CSE</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Vice President Section -->
+            <fieldset>
+                <legend>Vice President</legend>
+                <div class="candidate">
+                    <input type="radio" id="vp1" name="vicePresident" value="Candidate 1" required>
+                    <label for="vp1">
+                        <img src="https://via.placeholder.com/150" alt="Candidate 1">
+                        <span>Deepak Raj R D III Year CSE A</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="vp2" name="vicePresident" value="Candidate 2">
+                    <label for="vp2">
+                        <img src="https://via.placeholder.com/150" alt="Candidate 2">
+                        <span>Kanishk Aditya IV Year CSE B</span>
+                    </label>
+                </div>
+                <div class="candidate">
+                    <input type="radio" id="vp3" name="vicePresident" value="Candidate 3">
+                    <label for="vp3">
+                        <img src="https://via.placeholder.com/150" alt="Candidate 3">
+                        <span>Thivagar M IV Year CSE C</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Secretary Section -->
+<fieldset>
+    <legend>Secretary</legend>
+    <div class="candidate">
+        <input type="radio" id="sec1" name="secretary" value="Candidate 1" required>
+        <label for="sec1">
+            <img src="https://via.placeholder.com/150" alt="Candidate 1">
+            <span>Hari Prashath III Year CSE A</span>
+        </label>
+    </div>
+    <div class="candidate">
+        <input type="radio" id="sec2" name="secretary" value="Candidate 2">
+        <label for="sec2">
+            <img src="https://via.placeholder.com/150" alt="Candidate 2">
+            <span>Mahadevan R III Year CSE B</span>
+        </label>
+    </div>
+    <div class="candidate">
+        <input type="radio" id="sec3" name="secretary" value="Candidate 3">
+        <label for="sec3">
+            <img src="https://via.placeholder.com/150" alt="Candidate 3">
+            <span>Renil Immanuel C IV Year CSE C</span>
+        </label>
+    </div>
+</fieldset>
+
+<!-- Joint Secretary Section -->
+<fieldset>
+    <legend>Joint Secretary</legend>
+    <div class="candidate">
+        <input type="radio" id="js1" name="jointSecretary" value="Candidate 1" required>
+        <label for="js1">
+            <img src="https://via.placeholder.com/150" alt="Candidate 1">
+            <span>Gokul P II Year CSE A</span>
+        </label>
+    </div>
+    <div class="candidate">
+        <input type="radio" id="js2" name="jointSecretary" value="Candidate 2">
+        <label for="js2">
+            <img src="https://via.placeholder.com/150" alt="Candidate 2">
+            <span>Muthu Karuppan K II Year CSE B</span>
+        </label>
+    </div>
+    <div class="candidate">
+        <input type="radio" id="js3" name="jointSecretary" value="Candidate 3">
+        <label for="js3">
+            <img src="https://via.placeholder.com/150" alt="Candidate 3">
+            <span>Vishal Siva II Year CSE C</span>
+        </label>
+    </div>
+</fieldset>
+
+            <button type="submit">Submit Vote</button>
+            <button type="reset">Reset</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
